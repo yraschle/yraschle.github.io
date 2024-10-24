@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script type="text/javascript">
-    // Capture the current URL path (e.g., /user/username)
-    var currentPath = window.location.pathname + window.location.search + window.location.hash;
+  <head>
+    <script type="text/javascript">
+      var currentPath =
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
 
-    // Redirect to index.html with the original path as a fragment (hash)
-    window.location.href = '/index.html#' + currentPath;
-  </script>
-</head>
-<body>
-</body>
+      if (currentPath !== "/" && currentPath !== "/index.html") {
+        window.location.href = "/index.html?redirectTo=" + currentPath;
+      }
+    </script>
+  </head>
+  <body></body>
 </html>
