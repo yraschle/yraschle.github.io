@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=index.html">
   <script type="text/javascript">
-    // In case the meta tag fails, use JavaScript
-    window.location.href = '/index.html?' + window.location.pathname;
+    // Capture the current URL path (e.g., /user/username)
+    var currentPath = window.location.pathname + window.location.search + window.location.hash;
+
+    // Redirect to index.html with the original path as a fragment (hash)
+    window.location.href = '/index.html#' + currentPath;
   </script>
 </head>
 <body>
