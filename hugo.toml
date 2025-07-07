@@ -31,6 +31,10 @@ theme = "hugo-coder"
   tag = "tags"
   author = "authors"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 # Social links
 [[params.social]]
   name = "Email"
