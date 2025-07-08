@@ -8,7 +8,7 @@ Here are some of my current projects. I'm using these projects to explore new te
 ## yApp
 **A Simple Social Network**
 
-yApp is a simple social network with some nice blogging features. It is Built with the MEAN stack (MongoDB, Express.js, Angular, Node.js) and combines traditional blogging with social interactions. Users can create content, follow other writers, and engage with posts through comments and reactions. It is my first full stack project and has a very minimalistic frontend.
+yApp is a simple social network with some nice blogging features. It is built with the MEAN stack (MongoDB, Express.js, Angular, Node.js) and combines traditional blogging with social interactions. Users can create content, follow other writers, and engage with posts through comments and reactions. It is my first full stack project and has a very minimalistic frontend.
 
 **Built with:**
 - Frontend: Angular
@@ -50,7 +50,7 @@ The application is written primarily in Python and uses FastAPI to serve reports
 WordWars is a word finding game that supports 1-4 players with real-time multiplayer functionality. The game uses React on the client side and Rust on the server for matchmaking, game logic, and real-time communication. The Server-client communication happens over WebSockets.
 
 **Built with:** 
-- Frontend: React
+- React with TypeScript and Tailwind CSS
 - Backend: Rust
 - Communication: WebSockets
 - Status: In Progress
