@@ -1,0 +1,139 @@
+baseurl: https://yraschle.github.io
+languagecode: en
+title: MyWebPage
+theme: PaperMod
+
+# Disable search engine indexing
+disableSitemap: true
+disableRSS: true
+disableKinds: ["RSS", "sitemap", "robotsTXT"]
+
+# Prevent search engine crawling
+enableRobotsTXT: true
+robotsNoIndex: true
+robotsNoFollow: true
+
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+
+# minify:
+#   disableXML: true
+#   minifyOutput: true
+
+params:
+  title: MyWebPage
+  description: "Personal website"
+  keywords: []
+  author: "Yannick Raschle"
+  DateFormat: "January 2, 2006"
+
+  defaultTheme: auto # dark, light
+  disableThemeToggle: true
+
+  ShowReadingTime: true
+  # ShowShareButtons: true
+  # ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  # ShowCodeCopyButtons: false
+  # ShowWordCount: true
+  # ShowRssButtonInSectionTermList: true
+
+  UseHugoToc: true
+
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  # showtoc: true
+  # tocopen: true
+
+  disableAnchoredHeadings: true
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+    # favicon16x16: "<link / abs url>"
+    # favicon32x32: "<link / abs url>"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Home"
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome to my Website!"
+    Content: |
+      Hey there! I'm Yannick Raschle, a computer science student with a passion for software development.
+
+      I'm using this website to share what I'm working on, document my projects, 
+      and write about whatever's caught my attention in the world of software development.
+
+  socialIcons:
+    - name: Email
+      url: "mailto:yraschle@icloud.com"
+    - name: Github
+      url: "https://github.com/yraschle"
+    - name: Linkedin
+      url: "https://linkedin.com/in/yraschle"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  # fuseOpts:
+  #   isCaseSensitive: false
+  #   shouldSort: true
+  #   location: 0
+  #   distance: 1000
+  #   threshold: 0.4
+  #   minMatchCharLength: 0
+  #   limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+  #   keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: About
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: Projects
+      name: Projects
+      url: /projects/
+      weight: 20
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+  
